@@ -49,10 +49,10 @@ public:
     bool prepareOffscreenSurface();
     
 public slots:
-    bool screenshoot();
+    bool screenshoot();///< Take a screenshot.
 
 signals:
-    void newScreenshot(const QByteArray & _data);
+    void newScreenshot(const QByteArray & _data);///< Successful screenshot notification.
 
 protected:
     bool parseReturnValue(const char * _name, HRESULT _hResult);
